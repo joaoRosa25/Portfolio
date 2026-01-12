@@ -1,0 +1,14 @@
+[
+    {
+      "title": "Programming Languages ",
+      "items": ["C", "C#", "Python", "SQL", "Java", "JavaScript"]
+    },
+    {
+      "title": "Web Development",
+      "items": ["HTML","CSS","JavaScript","React","Tailwind css","Django","Python","Blazor"]
+    },
+    {
+      "title": "Databases",
+      "items": ["My SQL", "Maria DB", "Microsoft SQL Server"]
+    }
+]

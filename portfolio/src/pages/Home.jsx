@@ -1,4 +1,7 @@
 import Work from "./Work";
+import Avatar from "../componentes/icons/avatar.png";
+import Skills from "./Skills";
+
 export default function Home() {
   return (
     <>
@@ -11,7 +14,7 @@ export default function Home() {
             Software<br />Developer
           </h1>
 
-          <div className="mt-10 flex items-center gap-2 text-sm text-neutral-400">
+          <div className="mt-10 flex items-center gap-2 text-sm text-neutral-400"> 
             <span>asd@gmail.com</span>
             <button
               aria-label="Copy email"
@@ -27,9 +30,9 @@ export default function Home() {
           {/* Avatar */}
           <div className="flex justify-center mb-6">
             <img
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400"
-              alt="Profile"
-              className="w-40 h-40 rounded-full object-cover shadow-lg"
+              src = {Avatar} //"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400"
+              alt = "Profile"
+              className="w-50 h-50 rounded-full object-cover"
             />
           </div>
 
@@ -41,8 +44,8 @@ export default function Home() {
         </div>
       </section>
       <div className="w-full h-px bg-white/20" /> 
-
-      {/* WORK */}
+  
+      <Skills />
       <Work />
     </>
   );
