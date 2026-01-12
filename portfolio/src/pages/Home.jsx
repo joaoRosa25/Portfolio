@@ -1,5 +1,7 @@
+import Work from "./Work";
 export default function Home() {
   return (
+    <>
     <section className="min-h-screen bg-neutral-900 text-neutral-100 flex items-center">
       <div className="mx-auto w-full max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
         
@@ -36,7 +38,12 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </p>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
+      <div className="w-full h-px bg-white/20" /> 
+
+      {/* WORK */}
+      <Work />
+    </>
   );
 }
