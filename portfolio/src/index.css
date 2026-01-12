@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@font-face{
+  font-family: Outfit;
+  src: url("../src/assets/Fontes/Outfit/Outfit-VariableFont_wght.ttf")
+}
+
+@theme {
+  --font-outfit: Outfit, "sans-serif"
+}
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  @apply bg-neutral-900;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
