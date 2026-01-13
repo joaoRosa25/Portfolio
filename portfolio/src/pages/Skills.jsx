@@ -1,61 +1,79 @@
+import { motion } from "framer-motion";
 import skills from "../componentes/Skills.json";
+import {
+  titleAnimation,
+  timelineContainer,
+  timelineItem,
+  timelineLine,
+  timelineDot,
+  skillItem,
+} from "../animations/Animations";
 
 export default function Skills() {
   return (
-    <section className="text-white py-20">
+    <section className="text-white py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Title */}
-        <div className="text-center mb-14">
+        <motion.div
+          variants={titleAnimation}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
           <h2 className="text-5xl font-extrabold tracking-[0.2em] text-neutral-100">
             SKILLS
           </h2>
           <div className="mx-auto mt-4 h-1 w-20 rounded bg-gradient-to-r from-gray-900 to-neutral-50" />
-        </div>
+        </motion.div>
 
-        {/* tamanho area de escrita (pr-30)  */}
-        <div className="relative pr-30">
-          
-          {/* linha */}
-          <div className="absolute left-3 top-0 bottom-0 w-[3px] bg-sky-400/80 rounded " />
+        {/* Timeline */}
+        <motion.div
+          className="relative max-w-3xl mx-auto"
+          variants={timelineContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {/* Line */}
+          <motion.div
+            className="absolute left-3 top-0 bottom-0 w-[3px] bg-sky-400/80 rounded"
+            variants={timelineLine}
+            style={{ transformOrigin: "top" }}
+          />
 
-          <div className="space-y-10"> {/* distancia dos cards */}
-            {/*skills.map precorre o array, Block elemento atual do array, idx -> indice */}
+          <div className="space-y-10">
             {skills.map((block, idx) => (
-              <div key={idx} className="relative">
+              <motion.div key={idx} className="relative" variants={timelineItem}>
+                {/* Dot */}
+                <motion.div className="absolute left-[2px] top-8" variants={timelineDot}>
+                  <div className="h-5 w-5 rounded-full bg-neutral-900 border-[3px] border-sky-400" />
+                </motion.div>
 
-                {/* Ponto */}
-                <div className="absolute left-[2px] top-8">
-                    <div className="h-5 w-5 rounded-full bg-neutral-900 border-[3px] border-sky-400" />
-                </div>
+                {/* Card */}
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  className="ml-10 rounded-2xl bg-white/10 border border-white/10 shadow-xl px-8 py-7 backdrop-blur"
+                >
+                  <h3 className="text-xl font-semibold text-sky-300 mb-5">{block.title}</h3>
 
-                {/* card */}
-                <div className="ml-10 rounded-2xl bg-white/10 border border-white/10 shadow-xl px-8 py-7 backdrop-blur">
-                  <h3 className="text-xl font-semibold text-sky-300 mb-5">
-                    {block.title}
-                  </h3>
-
-                    {/*carregar info do skills */}
                   <div className="flex flex-wrap gap-x-7 gap-y-4 text-white/90">
-                    {/*it -> item atual */}
                     {block.items.map((it) => (
-                        <span
-                            key={it}
-                            className="text-sm md:text-base flex items-center gap-2">
-
+                      <motion.span key={it} variants={skillItem} className="text-sm md:text-base flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-sky-400/80" />
-                            {it} {/*"Print" no ecrã*/}
-                        </span>
+                        {it}
+                      </motion.span>
                     ))}
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="mt-30 w-full h-px bg-white/20" /> 
-    </section>
 
+      <div className="mt-20 w-full h-px bg-white/20" />
+    </section>
   );
 }
