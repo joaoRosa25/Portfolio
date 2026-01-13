@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./pages/Header";
+import Header from "./pages/header";
 
 export default function App() {
   return (

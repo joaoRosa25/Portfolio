@@ -2,17 +2,16 @@ import { motion } from "framer-motion";
 import Avatar from "../componentes/icons/avatar.png";
 import Skills from "./Skills";
 import Work from "./Work";
+import Footer from "./Footer";
 
 import {
   titleAnimation,
 } from "../animations/Animations";
 
-
 export default function Home() {
   return (
     <>
-      {/* HERO */}
-      <section className="min-h-screen bg-neutral-900 text-neutral-100 flex items-center overflow-hidden">
+      <section  id= "about" className="min-h-screen bg-neutral-900 text-neutral-100 flex items-center overflow-hidden">
         <div className="mx-auto w-full max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
 
           {/* LEFT */}
@@ -81,6 +80,7 @@ export default function Home() {
       {/* SECTIONS */}
       <Skills />
       <Work />
+      <Footer/>
     </>
   );
 }

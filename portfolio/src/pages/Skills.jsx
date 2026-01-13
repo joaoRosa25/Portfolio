@@ -11,7 +11,7 @@ import {
 
 export default function Skills() {
   return (
-    <section className="text-white py-20 overflow-hidden">
+    <section id = "Skills" className="text-white py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Title */}

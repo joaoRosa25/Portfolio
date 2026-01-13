@@ -7,9 +7,27 @@
   },
   {
     "title": "HexFrogger",
-    "description": "Contributed to a C-based tool to hexdump files and see strings in the dump built in C. ",
+    "description": "Contributed to a C-based tool to hexdump files and see strings in the dump. ",
     "image": "./src/assets/hex.png",
     "link" : "https://github.com/CapitaoSapinhas/hexfrogger"
+  },
+  {
+    "title": "In Action: Create a Digital Book",
+    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "link": "#"
+  },
+  {
+    "title": "In Action: Create a Digital Book",
+    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "link": "#"
+  },
+  {
+    "title": "In Action: Create a Digital Book",
+    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "link": "#"
   },
   {
     "title": "In Action: Create a Digital Book",

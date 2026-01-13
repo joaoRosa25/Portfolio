@@ -13,6 +13,8 @@ function PcLink({ name, href }) {
   );
 }
 
+
+// Hook to scroll to hash on location change
 function useScrollToHash() {
   const location = useLocation();
 
@@ -28,22 +30,18 @@ function useScrollToHash() {
 export default function Header() {
   const [hideHeader, setHideHeader] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
 
   useScrollToHash();
 
+  // Faz o header desaparecer quando a rolagem passar metade da tela
   useEffect(() => {
-    const target = document.querySelector("#title");
-    if (!target) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setHideHeader(!entry.isIntersecting),
-      { threshold: 0.1 }
-    );
-
-    observer.observe(target);
-    return () => observer.disconnect();
-  }, [location.pathname]);
+    const handleScroll = () => {
+      const halfway = window.innerHeight / 2; // metade da altura da tela
+      setHideHeader(window.scrollY > halfway);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -86,9 +84,9 @@ export default function Header() {
               }
             `}
           >
-            <PcLink name="Work" href="/inicio#about" />
-            <PcLink name="About me" href="/inicio#team" />
-            <PcLink name="Contact" href="/contactos" />
+            <PcLink name="About me" href="/home#about" />
+            <PcLink name="Skills" href="/home#Skills" />
+            <PcLink name="Work" href="/home#Work" />
           </nav>
         </div>
       </div>

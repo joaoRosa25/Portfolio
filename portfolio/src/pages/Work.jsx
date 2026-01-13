@@ -3,7 +3,7 @@ import items from "../componentes/items.json";
 
 export default function Work() {
   return (
-    <section className="bg-neutral-900 py-2">
+    <section id = "Work" className="bg-neutral-900 py-2">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
