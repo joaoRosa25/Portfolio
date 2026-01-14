@@ -63,10 +63,10 @@ export default function Work() {
                 {/* Imagem do projeto */}
                 <div className="h-48 overflow-hidden">
                   <img
-                    src={item.image}
+                    src={`${import.meta.env.BASE_URL}${item.image}`}
                     alt={item.title}
                     className="h-full w-full object-cover"/>
-                </div>
+                  </div>
 
                 {/* Conteúdo do cartão */}
                 <div className="p-6">

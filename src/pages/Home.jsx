@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Avatar from "../assets/avatar.png";
+import Avatar from "/assets/avatar.png";
 import Skills from "./Skills";
 import Work from "./Work";
 import Footer from "./Footer";
