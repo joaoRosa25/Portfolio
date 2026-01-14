@@ -7,8 +7,11 @@ export default function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
         <Route path="/" element={<Navigate to="/home" replace />} />
+
+        <Route path="/home" element={<Home />} />
+
+        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </>
   );
