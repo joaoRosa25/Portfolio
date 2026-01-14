@@ -19,7 +19,7 @@ export default function Seta({ onToggle }) {
       onClick={handleClick}
       className="mt-10 text-white text-4xl mx-auto block"
       animate={{ rotate: open ? 180 : 0 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.7 }}
     >
       ⌄
     </motion.button>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Avatar from "../componentes/icons/avatar.png";
+import Avatar from "../assets/avatar.png";
 import Skills from "./Skills";
 import Work from "./Work";
 import Footer from "./Footer";
@@ -31,7 +31,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="mt-10 flex items-center gap-2 text-sm text-neutral-400"
             >
-              <span>asd@gmail.com</span>
+              <span>jony.port25@gmail.com</span>
               <button
                 aria-label="Copy email"
                 className="hover:text-neutral-200 transition"
@@ -69,7 +69,7 @@ export default function Home() {
               transition={{ delay: 0.4 }}
               className="max-w-md text-lg leading-relaxed text-neutral-200"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Hello, I'm João, a high school student studying Programming. I'm interested in software development and have a strong personal interest in cybersecurity. I enjoy learning new technologies, building practical projects, and solving problems through code.
             </motion.p>
           </div>
         </div>

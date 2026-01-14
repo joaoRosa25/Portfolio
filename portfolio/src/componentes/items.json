@@ -28,5 +28,11 @@
     "description": "CTF project created by CapitãoSapinhas for a class at EBSQF, with my participation in its development. The project was designed as an introduction to cybersecurity concepts for regular students, using accessible and educational challenges.",
     "image": "./src/assets/ctf.png",
     "link": "https://www.linkedin.com/posts/jo%C3%A3o-rosa-7b8348325_today-we-jo%C3%A3o-salgueiro-gustavo-lobo-magalh%C3%A3es-activity-7399489569915789312-1Wcw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIZMnwBU2D629RTyNIotRGplPaAqjBi55U"
+  },
+  {
+    "title": "Winner of ACM & xSTF - CTF 2025",
+    "description": "Participated as part of a team that won the ACM & xSTF CTF 2025, a cybersecurity competition held at FEUP - Faculdade de Engenharia da Universidade do Porto, solving challenges in web and osint.",
+    "image": "./src/assets/ctf_xstf.jpeg",
+    "link": "https://www.linkedin.com/posts/seven-one-tech-hub_p7s1-71techhub-hackathon-ugcPost-7332719126840291328-1HLY"
   }
 ]
