@@ -12,27 +12,21 @@
     "link" : "https://github.com/CapitaoSapinhas/hexfrogger"
   },
   {
-    "title": "In Action: Create a Digital Book",
-    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "link": "#"
+    "title": "C-Project to imitate an art gallery",
+    "description": "A console-based project C-based that simulates an art gallery management system. The application allows users to register new works of art, list all artworks, update artwork details, and search for specific pieces.",
+    "image": "./src/assets/galeria.jpg",
+    "link": "https://github.com/joaoRosa25/Projeto_C"
   },
   {
-    "title": "In Action: Create a Digital Book",
-    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "link": "#"
+    "title": "Python game",
+    "description": "A simple game developed in Py as an academic project, focused on game mechanics, collision handling, and object interaction.",
+    "image": "./src/assets/bola.png",
+    "link": "https://github.com/joaoRosa25/python_jogo_bolas"
   },
   {
-    "title": "In Action: Create a Digital Book",
-    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "link": "#"
-  },
-  {
-    "title": "In Action: Create a Digital Book",
-    "description": "Learn how teachers use digital tools to explain complex concepts through storytelling.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "link": "#"
+    "title": "CTF (Capture The Flag) Challenges",
+    "description": "CTF project created by CapitãoSapinhas for a class at EBSQF, with my participation in its development. The project was designed as an introduction to cybersecurity concepts for regular students, using accessible and educational challenges.",
+    "image": "./src/assets/ctf.png",
+    "link": "https://www.linkedin.com/posts/jo%C3%A3o-rosa-7b8348325_today-we-jo%C3%A3o-salgueiro-gustavo-lobo-magalh%C3%A3es-activity-7399489569915789312-1Wcw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIZMnwBU2D629RTyNIotRGplPaAqjBi55U"
   }
 ]
